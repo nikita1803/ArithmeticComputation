@@ -12,3 +12,8 @@ read -p "Enter third number" c;
 
 operation1=$((a+b*c))
 echo $operation1
+
+#UC-3
+
+operation2=$((a*b+c))
+echo $operation2
