@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 echo "Welcome"
-
+declare -A computation
 #UC-1
 
 read -p "Enter first number" a;
@@ -28,4 +28,11 @@ echo $operation3
 operation4=`awk "BEGIN {print ($a % $b)+$c }"`
 echo $operation4
 
+#UC-6
 
+computation[1]="$operation1"
+computation[2]="$operation2"
+computation[3]="$operation3"
+computation[4]="$operation4"
+
+echo  "computations "${computation[@]}
