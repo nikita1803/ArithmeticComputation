@@ -17,3 +17,9 @@ echo $operation1
 
 operation2=$((a*b+c))
 echo $operation2
+
+#UC-4
+
+operation3=`awk "BEGIN {print ($c + $a)/$b }"`
+echo $operation3
+
