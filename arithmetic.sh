@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash -x
 
 echo "Welcome"
 declare -A computation
@@ -38,9 +38,16 @@ computation[4]="$operation4"
 echo  "store the result in dictionary "${computation[@]}
 
 #UC-7
+
 count=0
 for((i=1; i<=4; i++))
 do
-compute[((count++))]=${computation[$i]}
+	compute[((count++))]=${computation[$i]}
 done
 echo "Reading value from dictionary from array" ${compute[@]}
+
+#UC-8
+
+decending=$(printf '%s\n' "${compute[@]}" | sort -nr )
+
+echo "Result in the decending order" ${decending[@]}
