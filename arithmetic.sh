@@ -51,3 +51,10 @@ echo "Reading value from dictionary from array" ${compute[@]}
 decending=$(printf '%s\n' "${compute[@]}" | sort -nr )
 
 echo "Result in the decending order" ${decending[@]}
+
+#UC-9
+
+ascending=$(printf '%s\n' "${compute[@]}" | sort -n )
+
+echo "Result in the ascending order" ${ascending[@]}
+
