@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash 
 
 echo "Welcome"
 declare -A computation
@@ -35,4 +35,12 @@ computation[2]="$operation2"
 computation[3]="$operation3"
 computation[4]="$operation4"
 
-echo  "computations "${computation[@]}
+echo  "store the result in dictionary "${computation[@]}
+
+#UC-7
+count=0
+for((i=1; i<=4; i++))
+do
+compute[((count++))]=${computation[$i]}
+done
+echo "Reading value from dictionary from array" ${compute[@]}
