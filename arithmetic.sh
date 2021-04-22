@@ -23,3 +23,9 @@ echo $operation2
 operation3=`awk "BEGIN {print ($c + $a)/$b }"`
 echo $operation3
 
+#UC-5
+
+operation4=`awk "BEGIN {print ($a % $b)+$c }"`
+echo $operation4
+
+
